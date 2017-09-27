@@ -47,16 +47,16 @@ Player.prototype.render = function() {
 };
 Player.prototype.handleInput = function(keys) {
     if (keys == 'left') {
-        player.x -= player.speed;
+        this.x -= this.speed;
     }
     if (keys == 'up') {
-        player.y -= player.speed - 20;
+        this.y -= this.speed - 20;
     }
     if (keys == 'right') {
-        player.x += player.speed;
+        this.x += this.speed;
     }
     if (keys == 'down') {
-        player.y += player.speed - 20;
+        this.y += this.speed - 20;
     }
     console.log('keys is: ' + keys);
     };
